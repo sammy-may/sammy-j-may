@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 import ExperienceCell from "./ExperienceCell";
 import StyledLink from "./StyledLink";
+import ProjectCell from "./ProjectCell";
 
 function App() {
     return (
@@ -24,15 +25,21 @@ function App() {
                             learning, and full-stack web development to complex
                             problems.
                         </p>
-                        <ul className="ml-1 mt-8 flex items-center">
-                            <li className="mr-8 shrink-0 text-3xl">
-                                <FaGithub />
+                        <ul className="ml-1 mt-8 flex items-center text-slate-500">
+                            <li className="mr-8 shrink-0 text-3xl hover:text-blue-300">
+                                <a href="https://github.com/sammy-may">
+                                    <FaGithub />
+                                </a>
                             </li>
-                            <li className="mr-8 shrink-0 text-3xl">
-                                <FaGoogleScholar />
+                            <li className="mr-8 shrink-0 text-3xl hover:text-blue-300">
+                                <a href="https://scholar.google.com/citations?user=DPhCEAoAAAAJ&hl=en">
+                                    <FaGoogleScholar />
+                                </a>
                             </li>
-                            <li className="mr-8 shrink-0 text-3xl">
-                                <FaLinkedin />
+                            <li className="mr-8 shrink-0 text-3xl hover:text-blue-300">
+                                <a href="https://www.linkedin.com/in/samuel-james-may/">
+                                    <FaLinkedin />
+                                </a>
                             </li>
                         </ul>
                     </header>
@@ -44,24 +51,47 @@ function App() {
                                 </h2>
                             </div>
                             <div className="text-gray-400">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Sapiente architecto vero
-                                    veniam nihil, quas unde voluptatem, harum,
-                                    magni quo corrupti est error ullam
-                                    reiciendis incidunt explicabo? Culpa non
-                                    corporis ex! Deserunt eligendi veniam
-                                    inventore quod? A praesentium quo
-                                    laboriosam! Quia, illo sapiente. Omnis quod
-                                    illum, amet voluptatum fuga optio temporibus
-                                    sequi culpa? Molestias iusto, dolorem
-                                    distinctio et sunt autem obcaecati. A fugit
-                                    dolor asperiores quod facere inventore in
-                                    harum nulla neque, sit unde dolores ex
-                                    corporis reprehenderit excepturi! Provident,
-                                    tenetur eum? Error ex esse exercitationem
-                                    praesentium corrupti mollitia iusto tempore.
+                                <p className="mb-3">
+                                    I'm a scientist and engineer interested in
+                                    solving difficult problems and building
+                                    user-friendly software.
                                 </p>
+                                <p className="mb-3">
+                                    I'm academically trained as a physicist. For
+                                    my Ph.D. and post-doc work, I applied
+                                    machine learning and statistics to petabytes
+                                    of particle collision data from the Large
+                                    Hadron Collider to draw insights about the
+                                    Higgs boson.
+                                </p>
+                                <p className="mb-3">
+                                    I've worked in quantitative finance as a
+                                    researcher and developer. During my time at
+                                    LSEG, I expanded the suite of algorithms and
+                                    analysis tools in the LSEG Yield Book, a
+                                    fixed-income analytics system used by major
+                                    investment banks and hedge funds.
+                                </p>
+                                <p className="mb-3">
+                                    I'm the creator of{" "}
+                                    <StyledLink
+                                        link="https://runemu.com"
+                                        text="RunEmu"
+                                    />
+                                    , an online platform to help runners
+                                    discover their next race.
+                                </p>
+                                <p className="mb-1.5">
+                                    I'm always open to collaborating on
+                                    interesting projects or discussing new
+                                    opportunities in ML, data science, and
+                                    software development. Feel free to reach out
+                                    to me at:
+                                </p>
+
+                                <span className="font-mono">
+                                    samuel.james.may1@gmail.com
+                                </span>
                             </div>
                         </section>
                         <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
@@ -288,28 +318,26 @@ function App() {
                                     Projects
                                 </h2>
                             </div>
-                            <div className="text-gray-400">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Sapiente architecto vero
-                                    veniam nihil, quas unde voluptatem, harum,
-                                    magni quo corrupti est error ullam
-                                    reiciendis incidunt explicabo? Culpa non
-                                    corporis ex! Deserunt eligendi veniam
-                                    inventore quod? A praesentium quo
-                                    laboriosam! Quia, illo sapiente. Omnis quod
-                                    illum, amet voluptatum fuga optio temporibus
-                                    sequi culpa? Molestias iusto, dolorem
-                                    distinctio et sunt autem obcaecati. A fugit
-                                    dolor asperiores quod facere inventore in
-                                    harum nulla neque, sit unde dolores ex
-                                    corporis reprehenderit excepturi! Provident,
-                                    tenetur eum? Error ex esse exercitationem
-                                    praesentium corrupti mollitia iusto tempore.
-                                </p>
-                            </div>
+                            <ProjectCell
+                                img="/images/runemu_ss.png"
+                                link="https://runemu.com"
+                                title="RunEmu"
+                                description={[
+                                    <p>
+                                        An online platform for runners to
+                                        discover their next race.
+                                    </p>,
+                                ]}
+                                tags={[
+                                    <p>React</p>,
+                                    <p>Typescript</p>,
+                                    <p>Vike</p>,
+                                    <p>Supabase</p>,
+                                    <p>TailwindCSS</p>,
+                                ]}
+                            />
                         </section>
-                        <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                        {/* <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
                             <div className="mb-4">
                                 <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200">
                                     Writing
@@ -335,6 +363,26 @@ function App() {
                                     praesentium corrupti mollitia iusto tempore.
                                 </p>
                             </div>
+                        </section> */}
+                        <section className="scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+                            <p className="text-sm text-slate-500">
+                                Built with{" "}
+                                <span className="text-slate-200">
+                                    Typescript
+                                </span>{" "}
+                                and{" "}
+                                <span className="text-slate-200">
+                                    TailwindCSS
+                                </span>
+                                , deployed with{" "}
+                                <span className="text-slate-200">Vercel</span>.
+                                Design inspired by{" "}
+                                <StyledLink
+                                    link="https://brittanychiang.com/"
+                                    text="Brittany Chiang's website"
+                                />
+                                .
+                            </p>
                         </section>
                     </main>
                 </div>

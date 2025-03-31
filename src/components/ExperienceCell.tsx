@@ -33,7 +33,7 @@ const ExperienceCell = (props: Props) => {
                 {props.date}
             </h3>
             <div className="sm:col-span-6">
-                <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-200 mb-0.5 group-hover:text-teal-200">
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-200 sm:mb-0.5 group-hover:text-teal-200">
                     {props.title}
                 </h3>
                 <h4 className="text-sm text-slate-500 mb-1.5 group-hover:text-teal-400/50">
