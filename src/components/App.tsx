@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import ExperienceCell from "./ExperienceCell";
 import StyledLink from "./StyledLink";
 import ProjectCell from "./ProjectCell";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
     return (
@@ -387,6 +388,7 @@ function App() {
                     </main>
                 </div>
             </div>
+            <Analytics />
         </div>
     );
 }
