@@ -17,14 +17,13 @@ function App() {
                             Samuel May
                         </h1>
                         <h2 className="text-slate-200 text-lg font-medium tracking-tight pb-4 sm:text-xl lg:pb-5">
-                            Machine Learning {"\u2022"} Data Science {"\u2022"}{" "}
-                            Full-Stack Development
+                            AI/ML {"\u2022"} Data Science {"\u2022"} Full-Stack
+                            Development
                         </h2>
                         <p className="text-gray-400">
-                            Ex-particle physicist and ex-quantitative finance
-                            professional, now applying data science, machine
-                            learning, and full-stack web development to complex
-                            problems.
+                            Founding Scientist at Incept AI, building voice AI
+                            for quick-service restaurants. Background in
+                            particle physics and quantitative finance.
                         </p>
                         <ul className="ml-1 mt-8 flex items-center text-slate-500">
                             <li className="mr-8 shrink-0 text-3xl hover:text-blue-300">
@@ -58,6 +57,16 @@ function App() {
                                     user-friendly software.
                                 </p>
                                 <p className="mb-3">
+                                    Currently, I'm a Founding Scientist at{" "}
+                                    <StyledLink
+                                        link="https://www.incept.ai/"
+                                        text="Incept AI"
+                                    />
+                                    , where I'm developing voice AI systems for
+                                    automated phone and drive-thru ordering at
+                                    quick-service restaurants.
+                                </p>
+                                <p className="mb-3">
                                     I'm academically trained as a physicist. For
                                     my Ph.D. and post-doc work, I applied
                                     machine learning and statistics to petabytes
@@ -66,15 +75,16 @@ function App() {
                                     Higgs boson.
                                 </p>
                                 <p className="mb-3">
-                                    I've worked in quantitative finance as a
-                                    researcher and developer. During my time at
-                                    LSEG, I expanded the suite of algorithms and
-                                    analysis tools in the LSEG Yield Book, a
-                                    fixed-income analytics system used by major
-                                    investment banks and hedge funds.
+                                    Previously, I worked in quantitative finance
+                                    as a researcher and developer. During my
+                                    time at LSEG, I expanded the suite of
+                                    algorithms and analysis tools in the LSEG
+                                    Yield Book, a fixed-income analytics system
+                                    used by major investment banks and hedge
+                                    funds.
                                 </p>
                                 <p className="mb-3">
-                                    I'm the creator of{" "}
+                                    I'm also the creator of{" "}
                                     <StyledLink
                                         link="https://runemu.com"
                                         text="RunEmu"
@@ -85,7 +95,7 @@ function App() {
                                 <p className="mb-1.5">
                                     I'm always open to collaborating on
                                     interesting projects or discussing new
-                                    opportunities in ML, data science, and
+                                    opportunities in AI/ML, data science, and
                                     software development. Feel free to reach out
                                     to me at:
                                 </p>
@@ -101,6 +111,22 @@ function App() {
                                     Experience
                                 </h2>
                             </div>
+                            <ExperienceCell
+                                date="2025 - Present"
+                                title="Founding Scientist"
+                                company="Incept AI"
+                                description={[
+                                    <p>
+                                        Developing voice AI systems for
+                                        automated phone and drive-thru ordering
+                                        at quick-service restaurants.
+                                    </p>,
+                                ]}
+                                tags={[
+                                    <p>Python</p>,
+                                    <p>LLMs</p>,
+                                ]}
+                            />
                             <ExperienceCell
                                 date="2022 - 2024"
                                 title="Quantitative Developer"
