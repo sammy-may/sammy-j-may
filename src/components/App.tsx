@@ -5,13 +5,16 @@ import { FaLinkedin } from "react-icons/fa";
 import ExperienceCell from "./ExperienceCell";
 import StyledLink from "./StyledLink";
 import ProjectCell from "./ProjectCell";
+import ForestBackground from "./ForestBackground";
 import { Analytics } from "@vercel/analytics/react";
 
 function App() {
     return (
-        <div className="mx-auto bg-slate-900">
-            <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0 bg-slate-900">
-                <div className="lg:flex lg:justify-between lg:gap-4 bg-slate-900">
+        <div className="relative mx-auto min-h-screen overflow-hidden bg-slate-950 text-slate-200">
+            <ForestBackground />
+            <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-slate-950/44 via-slate-900/24 to-slate-950/62" />
+            <div className="relative z-10 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+                <div className="lg:flex lg:justify-between lg:gap-4">
                     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:py-24">
                         <h1 className="text-4xl font-bold tracking-tight text-slate-200 pb-3 sm:text-5xl lg:pb-4">
                             Samuel May

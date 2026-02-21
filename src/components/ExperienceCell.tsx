@@ -28,7 +28,7 @@ const ExperienceCell = (props: Props) => {
     ));
 
     return (
-        <div className="border border-gray-900 hover:border-teal-300 rounded-lg group relative grid transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 py-3 -mx-3 px-3 mb-3">
+        <div className="border border-transparent hover:border-teal-300 rounded-lg group relative grid transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 py-3 -mx-3 px-3 mb-3">
             <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 mb-2 sm:mb-0">
                 {props.date}
             </h3>

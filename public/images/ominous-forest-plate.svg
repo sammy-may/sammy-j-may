@@ -1,0 +1,167 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1920 1200"
+    preserveAspectRatio="xMidYMid slice"
+>
+    <defs>
+        <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#1c2f44" />
+            <stop offset="36%" stop-color="#121f32" />
+            <stop offset="62%" stop-color="#0c1626" />
+            <stop offset="100%" stop-color="#050b13" />
+        </linearGradient>
+
+        <radialGradient id="moonGlow" cx="54%" cy="24%" r="45%">
+            <stop offset="0%" stop-color="#9ab8c6" stop-opacity="0.38" />
+            <stop offset="36%" stop-color="#7898ab" stop-opacity="0.18" />
+            <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+        </radialGradient>
+
+        <linearGradient id="ridgeFar" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#182637" />
+            <stop offset="100%" stop-color="#0b1520" />
+        </linearGradient>
+
+        <linearGradient id="ridgeMid" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#141f2e" />
+            <stop offset="100%" stop-color="#090f17" />
+        </linearGradient>
+
+        <linearGradient id="ridgeNear" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0f1822" />
+            <stop offset="100%" stop-color="#060a10" />
+        </linearGradient>
+
+        <linearGradient id="groundMist" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#6f8da2" stop-opacity="0.08" />
+            <stop offset="40%" stop-color="#3f5a6b" stop-opacity="0.14" />
+            <stop offset="100%" stop-color="#0a161e" stop-opacity="0.68" />
+        </linearGradient>
+
+        <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.9"
+                numOctaves="2"
+                seed="11"
+                stitchTiles="stitch"
+            />
+            <feColorMatrix
+                type="matrix"
+                values="
+                    0 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 .08 0"
+            />
+        </filter>
+
+        <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="6" />
+        </filter>
+
+        <symbol id="pine" viewBox="-16 0 32 220">
+            <rect x="-1.6" y="126" width="3.2" height="92" rx="1.4" fill="#070d12" />
+            <path
+                d="M0 0 L-13 56 L-8.5 56 L-14 92 L-9.2 92 L-15 124 L0 106 L15 124 L9.2 92 L14 92 L8.5 56 L13 56 Z"
+                fill="#0a1319"
+            />
+            <path
+                d="M0 24 L-10.5 70 L-6.5 70 L-11 102 L-7.5 102 L-12 126 L0 112 L12 126 L7.5 102 L11 102 L6.5 70 L10.5 70 Z"
+                fill="#0e1b21"
+            />
+        </symbol>
+    </defs>
+
+    <rect width="1920" height="1200" fill="url(#sky)" />
+    <rect width="1920" height="1200" fill="url(#moonGlow)" />
+
+    <g opacity="0.58" filter="url(#softBlur)">
+        <ellipse cx="980" cy="300" rx="610" ry="250" fill="#89a7b8" opacity="0.16" />
+        <ellipse cx="930" cy="360" rx="760" ry="200" fill="#5f7890" opacity="0.1" />
+    </g>
+
+    <path
+        d="M0 650 C220 530 350 525 560 598 C770 670 980 500 1210 550 C1460 603 1650 560 1920 480 L1920 1200 L0 1200 Z"
+        fill="url(#ridgeFar)"
+        opacity="0.7"
+    />
+    <path
+        d="M0 760 C240 680 430 720 625 790 C820 860 1010 740 1220 785 C1475 840 1710 760 1920 715 L1920 1200 L0 1200 Z"
+        fill="url(#ridgeMid)"
+        opacity="0.78"
+    />
+    <path
+        d="M0 860 C175 820 360 865 540 930 C750 1002 980 885 1220 944 C1460 1002 1710 930 1920 888 L1920 1200 L0 1200 Z"
+        fill="url(#ridgeNear)"
+        opacity="0.9"
+    />
+
+    <g opacity="0.28" fill="#0f1b22">
+        <path d="M36 750 Q62 698 83 754 T130 760 Q115 770 95 770 T52 765 Z" />
+        <path d="M185 736 Q214 682 236 736 T292 744 Q274 759 248 760 T200 752 Z" />
+        <path d="M360 728 Q392 670 416 728 T476 736 Q452 758 424 759 T376 747 Z" />
+        <path d="M550 742 Q582 688 610 744 T672 750 Q648 765 620 768 T570 758 Z" />
+        <path d="M742 736 Q774 676 804 738 T870 746 Q844 764 813 766 T760 754 Z" />
+        <path d="M916 744 Q948 690 974 744 T1034 752 Q1008 768 978 768 T930 756 Z" />
+        <path d="M1102 739 Q1134 682 1162 740 T1220 748 Q1198 765 1170 766 T1120 756 Z" />
+        <path d="M1280 744 Q1310 688 1340 746 T1398 752 Q1376 767 1346 768 T1296 758 Z" />
+        <path d="M1456 748 Q1488 693 1516 748 T1578 758 Q1552 770 1520 772 T1472 761 Z" />
+        <path d="M1645 738 Q1676 680 1704 740 T1764 750 Q1741 766 1710 768 T1662 756 Z" />
+        <path d="M1812 742 Q1840 690 1866 744 T1914 756 Q1898 768 1874 769 T1832 760 Z" />
+    </g>
+
+    <g opacity="0.42">
+        <use href="#pine" transform="translate(60 760) scale(1.15)" />
+        <use href="#pine" transform="translate(132 774) scale(1.05)" />
+        <use href="#pine" transform="translate(218 748) scale(1.2)" />
+        <use href="#pine" transform="translate(306 784) scale(0.98)" />
+        <use href="#pine" transform="translate(392 742) scale(1.22)" />
+        <use href="#pine" transform="translate(482 772) scale(1.03)" />
+        <use href="#pine" transform="translate(568 734) scale(1.24)" />
+        <use href="#pine" transform="translate(650 780) scale(0.95)" />
+        <use href="#pine" transform="translate(742 736) scale(1.23)" />
+        <use href="#pine" transform="translate(824 780) scale(1)" />
+        <use href="#pine" transform="translate(914 736) scale(1.21)" />
+        <use href="#pine" transform="translate(996 780) scale(0.96)" />
+        <use href="#pine" transform="translate(1086 735) scale(1.23)" />
+        <use href="#pine" transform="translate(1168 782) scale(0.96)" />
+        <use href="#pine" transform="translate(1256 734) scale(1.22)" />
+        <use href="#pine" transform="translate(1338 780) scale(0.97)" />
+        <use href="#pine" transform="translate(1428 740) scale(1.2)" />
+        <use href="#pine" transform="translate(1512 782) scale(0.95)" />
+        <use href="#pine" transform="translate(1598 744) scale(1.16)" />
+        <use href="#pine" transform="translate(1688 786) scale(0.93)" />
+        <use href="#pine" transform="translate(1774 748) scale(1.13)" />
+        <use href="#pine" transform="translate(1860 790) scale(0.9)" />
+    </g>
+
+    <g opacity="0.66">
+        <use href="#pine" transform="translate(90 842) scale(1.45)" />
+        <use href="#pine" transform="translate(176 860) scale(1.28)" />
+        <use href="#pine" transform="translate(270 836) scale(1.5)" />
+        <use href="#pine" transform="translate(358 868) scale(1.22)" />
+        <use href="#pine" transform="translate(452 832) scale(1.53)" />
+        <use href="#pine" transform="translate(544 866) scale(1.2)" />
+        <use href="#pine" transform="translate(640 830) scale(1.54)" />
+        <use href="#pine" transform="translate(732 866) scale(1.22)" />
+        <use href="#pine" transform="translate(826 832) scale(1.52)" />
+        <use href="#pine" transform="translate(918 870) scale(1.19)" />
+        <use href="#pine" transform="translate(1012 834) scale(1.5)" />
+        <use href="#pine" transform="translate(1104 870) scale(1.22)" />
+        <use href="#pine" transform="translate(1198 836) scale(1.52)" />
+        <use href="#pine" transform="translate(1290 872) scale(1.2)" />
+        <use href="#pine" transform="translate(1384 836) scale(1.5)" />
+        <use href="#pine" transform="translate(1476 870) scale(1.2)" />
+        <use href="#pine" transform="translate(1568 842) scale(1.45)" />
+        <use href="#pine" transform="translate(1660 878) scale(1.17)" />
+        <use href="#pine" transform="translate(1752 848) scale(1.4)" />
+        <use href="#pine" transform="translate(1844 884) scale(1.14)" />
+    </g>
+
+    <rect y="890" width="1920" height="310" fill="url(#groundMist)" />
+
+    <g filter="url(#grain)">
+        <rect width="1920" height="1200" fill="#0b151f" opacity="0.68" />
+    </g>
+</svg>
