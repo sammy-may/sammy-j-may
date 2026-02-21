@@ -55,9 +55,8 @@ function App() {
                             </div>
                             <div className="text-gray-400">
                                 <p className="mb-3">
-                                    I'm a scientist and engineer interested in
-                                    solving difficult problems and building
-                                    user-friendly software.
+                                    I'm a scientist and engineer who enjoys
+                                    turning ideas into software.
                                 </p>
                                 <p className="mb-3">
                                     Currently, I'm a Founding Scientist at{" "}
@@ -65,26 +64,22 @@ function App() {
                                         link="https://www.incept.ai/"
                                         text="Incept AI"
                                     />
-                                    , where I'm developing voice AI systems for
-                                    automated phone and drive-thru ordering at
+                                    , where I build voice AI systems for
+                                    automated phone and drive-thru ordering in
                                     quick-service restaurants.
                                 </p>
                                 <p className="mb-3">
-                                    I'm academically trained as a physicist. For
-                                    my Ph.D. and post-doc work, I applied
-                                    machine learning and statistics to petabytes
-                                    of particle collision data from the Large
-                                    Hadron Collider to draw insights about the
-                                    Higgs boson.
+                                    Before that, I worked in quantitative
+                                    finance as a researcher and developer at
+                                    LSEG, improving the algorithms and analytics
+                                    behind their Yield Book platform.
                                 </p>
                                 <p className="mb-3">
-                                    Previously, I worked in quantitative finance
-                                    as a researcher and developer. During my
-                                    time at LSEG, I expanded the suite of
-                                    algorithms and analysis tools in the LSEG
-                                    Yield Book, a fixed-income analytics system
-                                    used by major investment banks and hedge
-                                    funds.
+                                    I studied physics, and during my Ph.D. and
+                                    postdoc I used machine learning and
+                                    statistics to study particle collision data
+                                    from the Large Hadron Collider to better
+                                    understand the Higgs boson.
                                 </p>
                                 <p className="mb-3">
                                     I'm also the creator of{" "}
@@ -92,15 +87,11 @@ function App() {
                                         link="https://runemu.com"
                                         text="RunEmu"
                                     />
-                                    , an online platform to help runners
-                                    discover their next race.
+                                    , a site that helps runners discover their
+                                    next race.
                                 </p>
                                 <p className="mb-1.5">
-                                    I'm always open to collaborating on
-                                    interesting projects or discussing new
-                                    opportunities in AI/ML, data science, and
-                                    software development. Feel free to reach out
-                                    to me at:
+                                    Feel free to reach out to me:
                                 </p>
 
                                 <span className="font-mono">
